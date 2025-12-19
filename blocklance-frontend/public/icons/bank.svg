@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <title>Bank</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M12,1 L22,7 L22,9 L2,9 L2,7 L12,1 Z M4,10 L6,10 L6,17 L4,17 L4,10 Z M9,10 L11,10 L11,17 L9,17 L9,10 Z M13,10 L15,10 L15,17 L13,17 L13,10 Z M18,10 L20,10 L20,17 L18,17 L18,10 Z M2,19 L2,21 L22,21 L22,19 L2,19 Z" fill="#4A5568"></path>
+    </g>
+</svg>

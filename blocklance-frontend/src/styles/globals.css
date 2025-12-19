@@ -1,0 +1,100 @@
+@import './glass.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #007aff;
+  --color-primary-light: #4db6e4;
+  --color-accent: #9b59b6;
+  --text-primary: #1a1a1a;
+  --text-secondary: #4a4a4a;
+  --bg-gradient-start: #ffffff;
+  --bg-gradient-mid: #f4f9ff;
+  --bg-gradient-end: #f8f5ff;
+}
+
+@layer base {
+  html, body, #root {
+    height: 100%;
+  }
+
+  body {
+    font-family: 'Inter', 'Poppins', system-ui, sans-serif;
+    background: linear-gradient(135deg, var(--bg-gradient-start), var(--bg-gradient-mid), var(--bg-gradient-end));
+    background-size: 400% 400%;
+    animation: gradient 60s ease infinite;
+    color: var(--text-primary);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    color: var(--text-primary);
+  }
+
+  p {
+    color: var(--text-secondary);
+  }
+
+  /* Focus styles */
+  :focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+    border-radius: 6px;
+  }
+
+  /* Links */
+  a {
+    color: var(--color-primary);
+    transition: color 0.2s;
+  }
+  
+  a:hover {
+    color: #005bbb; /* primary-dark */
+  }
+
+  /* Selection */
+  ::selection {
+    background-color: rgba(0, 122, 255, 0.2);
+    color: #005bbb;
+  }
+
+  /* Global section spacing and dividers */
+  main > section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+  main > section + section {
+    border-top: 1px solid rgba(0,0,0,0.05);
+  }
+}
+
+/* Animation keyframes */
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Fade-in with slight slide-down for dropdowns */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fadeIn {
+  animation: fadeIn 0.25s ease forwards;
+}
+
+/* Reduced motion respect */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+

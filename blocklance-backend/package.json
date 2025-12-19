@@ -1,0 +1,36 @@
+{
+  "name": "blocklance-backend",
+  "version": "0.1.0",
+  "description": "Backend for Blocklance: Firebase (email/Google) + MetaMask auth, MongoDB, Express",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "verify": "node src/utils/systemCheck.js",
+    "lint": "echo \"No linter configured\""
+  },
+  "dependencies": {
+    "cloudinary": "^1.41.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "ethers": "^6.13.2",
+    "express": "^4.19.2",
+    "express-validator": "^7.2.0",
+    "firebase-admin": "^12.5.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.6.3",
+    "morgan": "^1.10.0",
+    "multer": "^2.0.2",
+    "multer-storage-cloudinary": "^4.0.0",
+    "socket.io": "^4.8.1"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^6.1.0",
+    "hardhat": "^2.27.0",
+    "nodemon": "^3.1.0",
+    "socket.io-client": "^4.8.1"
+  }
+}

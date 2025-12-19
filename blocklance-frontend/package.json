@@ -1,0 +1,36 @@
+{
+  "name": "blocklance-frontend-windsurf",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "echo 'add your linter'",
+    "test": "echo 'add tests'"
+  },
+  "dependencies": {
+    "@react-oauth/google": "^0.12.1",
+    "axios": "^1.7.2",
+    "ethers": "^6.15.0",
+    "firebase": "^12.5.0",
+    "framer-motion": "^11.2.10",
+    "lucide-react": "^0.460.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-hot-toast": "^2.6.0",
+    "react-router-dom": "^6.28.0",
+    "react-toastify": "^11.0.5",
+    "recharts": "^2.13.1",
+    "web3modal": "^1.9.12"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.2",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "socket.io-client": "^4.8.1",
+    "tailwindcss": "^3.4.14",
+    "vite": "^5.4.8"
+  }
+}
